@@ -29,5 +29,14 @@ public  class frontend:Developer
         }
     }
 
+    public static bool operator >(frontend f1, frontend f2) => f1.Salary > f2.Salary;
+    public static bool operator <(frontend f1, frontend f2)
+    {
+        return f1.Salary < f2.Salary;
+    }
+    public static bool operator ==(frontend f1, frontend f2) => f1.Salary == f2.Salary;
+    public static bool operator !=(frontend f1, frontend f2) => f1.Salary != f2.Salary;
+    public static double operator +(frontend f1, frontend f2) => f1.Salary + f2.Salary;
+
 
 }

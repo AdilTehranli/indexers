@@ -2,7 +2,7 @@
 
 public class Developer : Engineer
 {
-    public  override double YearlyEarn()
+    public sealed override double YearlyEarn()
     {
         return Salary * 12;
     }
